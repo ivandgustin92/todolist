@@ -1,0 +1,37 @@
+<mat-toolbar color="primary" *ngIf="isLogged">
+<<<<<<< HEAD
+    <mat-toolbar-row>
+        <span>Todo List</span>
+        <span class="example-spacer"></span>
+        <button mat-icon-button [matMenuTriggerFor]="menu" class="btn-right">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item (click)="cerrarSesion()">
+          Cerrar sesión
+        </button>
+        </mat-menu>
+
+    </mat-toolbar-row>
+</mat-toolbar>
+=======
+  <mat-toolbar-row>
+    <span>Todo List</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button [matMenuTriggerFor]="menu" class="btn-right">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="cerrarSesion()">
+        Cerrar sesión
+      </button>
+    </mat-menu>
+
+  </mat-toolbar-row>
+</mat-toolbar>
+
+
+<router-outlet></router-outlet>
+>>>>>>> 6962227a6b8c597741305f0f0816b5d97d3a6b01
+
+<router-outlet></router-outlet>

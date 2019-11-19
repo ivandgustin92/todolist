@@ -1,0 +1,57 @@
+<mat-card class="example-card">
+<<<<<<< HEAD
+    <mat-card-header>
+    </mat-card-header>
+    <mat-card-content>
+        <form class="example-form">
+            <mat-form-field class="example-full-width">
+                <input matInput placeholder="Ingrese una tarea por favor..." [(ngModel)]="taskValue" name="taskName" (keypress)="onPress($event)">
+            </mat-form-field>
+        </form>
+
+        <mat-selection-list #taskList>
+            <mat-list-option *ngFor="let task of tasks; let i = index;" [value]="task.id">
+                <span [class]="task.complete?'complete':''">{{task.text}}</span>
+            </mat-list-option>
+        </mat-selection-list>
+
+    </mat-card-content>
+    <mat-card-actions align='end'>
+        <button mat-raised-button color="primary" (click)="completeTasks(taskList.selectedOptions)" [disabled]="taskList.selectedOptions.selected.length === 0">
+        Completar
+      </button>
+        <button mat-raised-button color="warn" (click)="deleteTask(taskList.selectedOptions)" [disabled]="taskList.selectedOptions.selected.length === 0">
+        Eliminar
+      </button>
+    </mat-card-actions>
+</mat-card>
+=======
+  <mat-card-header>
+  </mat-card-header>
+  <mat-card-content>
+    <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Ingrese una tarea por favor..." [(ngModel)]="taskValue" name="taskName"
+          (keypress)="onPress($event)">
+      </mat-form-field>
+    </form>
+
+    <mat-selection-list #taskList>
+      <mat-list-option *ngFor="let task of tasks; let i = index;" [value]="task.id">
+        <span [class]="task.complete?'complete':''">{{task.text}}</span>
+      </mat-list-option>
+    </mat-selection-list>
+
+  </mat-card-content>
+  <mat-card-actions align='end'>
+    <button mat-raised-button color="primary" (click)="completeTasks(taskList.selectedOptions)"
+      [disabled]="taskList.selectedOptions.selected.length === 0">
+      Completar
+    </button>
+    <button mat-raised-button color="warn" (click)="deleteTask(taskList.selectedOptions)"
+      [disabled]="taskList.selectedOptions.selected.length === 0">
+      Eliminar
+    </button>
+  </mat-card-actions>
+</mat-card>
+>>>>>>> 6962227a6b8c597741305f0f0816b5d97d3a6b01

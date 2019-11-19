@@ -1,0 +1,58 @@
+<form [formGroup]="loginForm" novalidate (ngSubmit)="onSubmit()">
+<<<<<<< HEAD
+    <mat-card class="shipping-card">
+        <mat-card-header>
+            <mat-card-title>Ingreso</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="row">
+                <div class="col">
+                    <mat-form-field class="full-width">
+                        <input type="email" matInput placeholder="Correo Electronico" formControlName="email">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <mat-form-field class="full-width">
+                        <input type="password" matInput placeholder="Contraseña" formControlName="password">
+                    </mat-form-field>
+                    <a href="/reset">Recuperar contraseña</a>
+                </div>
+            </div>
+        </mat-card-content>
+        <mat-card-actions align="end">
+            <button mat-raised-button color="secondary" (click)="gotoCrearCuenta()">Crear cuenta</button>
+            <button mat-raised-button color="primary" type="submit">Ingresar</button>
+        </mat-card-actions>
+
+    </mat-card>
+=======
+  <mat-card class="shipping-card">
+    <mat-card-header>
+      <mat-card-title>Ingreso</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input type="email" matInput placeholder="Correo electrónico" formControlName="email">
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input type="password" matInput placeholder="Contraseña" formControlName="password">
+          </mat-form-field>
+          <a href="/reset">Recuperar contraseña</a>
+        </div>
+      </div>
+    </mat-card-content>
+    <mat-card-actions align="end">
+      <button mat-raised-button color="secondary" (click)="gotoCrearCuenta()">Crear cuenta</button>
+      <button mat-raised-button color="primary" type="submit">Ingresar</button>
+    </mat-card-actions>
+  </mat-card>
+>>>>>>> 6962227a6b8c597741305f0f0816b5d97d3a6b01
+</form>
